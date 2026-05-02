@@ -9,14 +9,32 @@
 </head>
 <body>
 
+  <!-- Slide-in mobile sidebar -->
+  <div class="mobile-sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="mobile-sidebar" id="mobileSidebar">
+    <button class="mobile-sidebar-close" id="sidebarClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-sidebar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="engage.html">Engage</a></li>
+    </ul>
+  </aside>
+
   <!-- HEADER -->
   <header class="header">
     <div class="container nav">
       <span class="nav-brand">Habiba Mohamed</span>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="insights.html">Insights</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="engage.html">Engage</a></li>
       </ul>
     </div>
   </header>
@@ -42,23 +60,22 @@
               <span class="hero-role-tag">Social Impact Leader</span>
             </div>
             <div class="hero-buttons">
-              <a href="work.html" class="btn btn-primary">Explore Work</a>
-              <a href="insights.html" class="btn btn-outline" style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.3);">Book Advisory</a>
+              <a href="leadership.html" class="btn btn-primary">Explore Leadership</a>
+              <a href="engage.html" class="btn btn-hero-outline">Book Advisory</a>
             </div>
           </div>
 
           <div class="hero-image-block">
             <div class="hero-image-frame">
-              <!-- Replace src with your actual photo path -->
-              <img src="assets\images\profile.jpeg" alt="Habiba Corodhia Mohamed"
+              <img src="assets/images/profile.jpeg" alt="Habiba Corodhia Mohamed"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-              <div class="hero-image-placeholder" style="display:none;">
+              <div class="hero-image-placeholder">
                 <span>Profile Photo</span>
               </div>
             </div>
             <div class="hero-stat-bar">
               <div class="hero-stat">
-                <span class="hero-stat-num">20+</span>
+                <span class="hero-stat-num">18+</span>
                 <span class="hero-stat-label">Years</span>
               </div>
               <div class="hero-stat">
@@ -66,8 +83,8 @@
                 <span class="hero-stat-label">Countries</span>
               </div>
               <div class="hero-stat">
-                <span class="hero-stat-num">1</span>
-                <span class="hero-stat-label">Founder</span>
+                <span class="hero-stat-num">100K+</span>
+                <span class="hero-stat-label">Surgeries</span>
               </div>
             </div>
           </div>
@@ -86,16 +103,16 @@
             <h2 class="section-title">Building Systems That Last</h2>
             <div class="divider"></div>
             <p>
-              I am a psychologist and program specialist with over two decades of experience designing and leading complex, multi-country health programs across Sub-Saharan Africa.
+              I am a psychologist and social change program specialist with 18+ years of cross-functional experience in non-profit leadership across Sub-Saharan Africa. I am deeply committed to the health and empowerment of women and children, building culturally sensitive interventions that honour the inherent dignity of all.
             </p>
             <p>
-              My work focuses on building integrated systems that connect clinical care, mental health, and community-based support to create sustainable recovery pathways for women and girls.
+              My work integrates mental health and psychosocial support into every level of program design — connecting clinical care, community outreach, and socio-economic empowerment to create sustainable recovery pathways for women and girls.
             </p>
             <p>
-              I am the Founder and Lead Director of WADADIA, where we advance holistic care through the HER Dignity model — combining clinical treatment, psychosocial support, and socio-economic empowerment.
+              I am the Founder and Lead Director of WADADIA, and a PhD candidate in Counselling Psychology at Kenyatta University. Previously, I served as Regional Director of Programs at Fistula Foundation, overseeing initiatives across 29 countries in Africa and Asia.
             </p>
             <p>
-              Previously, I served as Regional Director of Programs in Africa, overseeing initiatives across 29 countries in partnership with governments and global institutions.
+              I am particularly interested in opportunities that drive scalable, system-level impact — from policy integration to community-based care design.
             </p>
           </div>
 
@@ -120,25 +137,99 @@
       <div class="container">
         <div class="impact-grid">
           <div class="impact-item">
-            <span class="impact-num">20+</span>
+            <span class="impact-num">18+</span>
             <span class="impact-label">Years Experience</span>
           </div>
           <div class="impact-item">
             <span class="impact-num">29</span>
-            <span class="impact-label">Countries Managed</span>
+            <span class="impact-label">Countries Supported</span>
           </div>
           <div class="impact-item">
-            <span class="impact-num">$M+</span>
-            <span class="impact-label">Programs Led</span>
+            <span class="impact-num">$50M+</span>
+            <span class="impact-label">Budget Oversight</span>
           </div>
           <div class="impact-item">
-            <span class="impact-num">1</span>
-            <span class="impact-label">Founder — WADADIA</span>
+            <span class="impact-num">100K+</span>
+            <span class="impact-label">Fistula Surgeries Overseen</span>
           </div>
           <div class="impact-item">
-            <span class="impact-num">RD</span>
-            <span class="impact-label">Regional Director — Africa</span>
+            <span class="impact-num">13K+</span>
+            <span class="impact-label">Women in Livelihood Programs</span>
           </div>
+          <div class="impact-item">
+            <span class="impact-num">3,500+</span>
+            <span class="impact-label">SGBV Survivors Supported</span>
+          </div>
+          <div class="impact-item">
+            <span class="impact-num">350+</span>
+            <span class="impact-label">Survivor Solidarity Groups</span>
+          </div>
+          <div class="impact-item">
+            <span class="impact-num">15+</span>
+            <span class="impact-label">Hospitals Supported</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS STRIP -->
+    <section class="awards-strip">
+      <div class="container">
+        <div class="awards-strip-inner">
+          <p class="awards-strip-label">International Recognition</p>
+          <div class="awards-list">
+            <div class="award-item">
+              <span class="award-year">2024</span>
+              <div class="award-detail">
+                <strong>Allen Rosenfield Award</strong>
+                <span>Outstanding achievement &amp; dedication to holistic care of women with fistula — Fistula Foundation</span>
+              </div>
+            </div>
+            <div class="award-divider"></div>
+            <div class="award-item">
+              <span class="award-year">2019</span>
+              <div class="award-detail">
+                <strong>Amplify Change Award</strong>
+                <span>First Prize — Diversity, Equity &amp; Inclusion · "Nothing About Us Without Us"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE ACHIEVEMENTS -->
+    <section class="achievements">
+      <div class="container">
+        <span class="section-label">Signature Achievements</span>
+        <h2 class="section-title">Impact That Defines the Work</h2>
+        <div class="divider"></div>
+        <div class="achievements-grid">
+
+          <div class="card">
+            <div class="achievement-icon">🏥</div>
+            <h3>Built a Hospital in 18 Months</h3>
+            <p>Designed, mobilised resources, and oversaw construction of a 75-bed women and children's hospital — complete surgical wing, two operating rooms — delivered on time.</p>
+          </div>
+
+          <div class="card">
+            <div class="achievement-icon">🔬</div>
+            <h3>Created the OF-COMBAT Screening Tool</h3>
+            <p>Developed the Obstetric Fistula Community-Based Assessment Tool — the first-ever verbal fistula screening tool, achieving over 85% screening success across communities.</p>
+          </div>
+
+          <div class="card">
+            <div class="achievement-icon">💰</div>
+            <h3>Contributed to a $15M Grant Win</h3>
+            <p>Participated in strategic preparation and donor interviews alongside the CEO and Chief of Programs, contributing to the largest single grant in Fistula Foundation's history — from MacKenzie Scott.</p>
+          </div>
+
+          <div class="card">
+            <div class="achievement-icon">🌍</div>
+            <h3>Continent-Wide Livelihood Program</h3>
+            <p>Designed and implemented a livelihood restoration program integrating financial literacy, vocational training, and survivor-led microenterprises — reaching 13,000+ marginalised women across Africa.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -185,9 +276,9 @@
           </div>
 
           <div>
-            <div class="card show" style="border-top-color: var(--primary); height: 100%;">
+            <div class="card wadadia-card show">
               <p class="section-label">What We Combine</p>
-              <h3 style="font-size:1.4rem; margin-bottom:24px;">An integrated approach to women's health</h3>
+              <h3 class="wadadia-card-title">An integrated approach to women's health</h3>
               <ul class="focus-list">
                 <li><span class="focus-dot"></span>Clinical Care</li>
                 <li><span class="focus-dot"></span>Psychosocial Support</li>
@@ -195,8 +286,8 @@
                 <li><span class="focus-dot"></span>Community-Based Delivery</li>
                 <li><span class="focus-dot"></span>Survivor-Centered Frameworks</li>
               </ul>
-              <div style="margin-top:36px;">
-                <a href="work.html" class="btn btn-outline">View Our Systems</a>
+              <div class="wadadia-card-cta">
+                <a href="leadership.html" class="btn btn-outline">View Our Systems</a>
               </div>
             </div>
           </div>
@@ -209,28 +300,24 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-  <div class="container footer-inner">
-
-    <div class="footer-brand">
-      <span class="footer-name">Habiba Corodhia Mohamed</span>
-      <p class="footer-tagline">Designing scalable health systems for women across Africa.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Habiba Corodhia Mohamed</span>
+        <p class="footer-tagline">Designing scalable health systems for women across Africa.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="research.html">Research</a>
+        <a href="engage.html">Engage</a>
+      </nav>
+      <div class="footer-social">
+        <a href="mailto:corodhia1@gmail.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/in/habiba-corodhia-mohamed-b28a0b81/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://wadadia-nonprofits.org" target="_blank" rel="noopener" aria-label="WADADIA">WADADIA</a>
+      </div>
+      <p class="footer-copy">© 2026 Habiba Corodhia Mohamed</p>
     </div>
-
-    <nav class="footer-nav">
-      <a href="index.html">Home</a>
-      <a href="work.html">Work</a>
-      <a href="insights.html">Insights</a>
-    </nav>
-
-    <div class="footer-social">
-      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-      <a href="mailto:your@email.com" aria-label="Email">Email</a>
-      <!-- Add more as needed: X, ResearchGate, etc. -->
-    </div>
-
-    <p class="footer-copy">© 2026 Habiba Corodhia Mohamed</p>
-
-  </div>
   </footer>
 
   <script src="js/main.js"></script>

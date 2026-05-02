@@ -27,11 +27,41 @@ window.addEventListener("scroll", () => {
 
 /* ── ACTIVE NAV LINK ── */
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
-const navLinks = document.querySelectorAll(".nav-links a");
 
-navLinks.forEach(link => {
+document.querySelectorAll(".nav-links a, .mobile-sidebar-nav a").forEach(link => {
   const href = link.getAttribute("href");
   if (href === currentPage || (currentPage === "" && href === "index.html")) {
     link.classList.add("active");
   }
 });
+
+/* ── MOBILE SLIDE‑IN SIDEBAR ── */
+const navToggle = document.querySelector(".nav-toggle");
+const sidebar = document.getElementById("mobileSidebar");
+const overlay = document.getElementById("sidebarOverlay");
+const closeBtn = document.getElementById("sidebarClose");
+
+function openSidebar() {
+  sidebar.classList.add("open");
+  overlay.classList.add("show");
+  navToggle.classList.add("nav-toggle--open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSidebar() {
+  sidebar.classList.remove("open");
+  overlay.classList.remove("show");
+  navToggle.classList.remove("nav-toggle--open");
+  document.body.style.overflow = "";
+}
+
+if (navToggle && sidebar && overlay && closeBtn) {
+  navToggle.addEventListener("click", openSidebar);
+  closeBtn.addEventListener("click", closeSidebar);
+  overlay.addEventListener("click", closeSidebar);
+
+  // Close when a nav link inside the sidebar is clicked
+  sidebar.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeSidebar);
+  });
+}
