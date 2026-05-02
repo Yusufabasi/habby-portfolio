@@ -1018,10 +1018,6 @@ main {
   flex-shrink: 0;
 }
 
-.calendly-wrap {
-  /* Removed old Calendly wrapper – using Zoom instead */
-}
-
 /* ── INSIGHTS: CONTACT ── */
 .contact-grid {
   display: grid;
@@ -1730,9 +1726,6 @@ main {
 
 /* ── BOOKING (engage page) ── */
 /* Cleaned up: removed fixed width for .booking-info, kept flexible */
-.booking-info {
-  /* no fixed width – it flexes inside the grid */
-}
 
 /* ── ZOOM SCHEDULER ── */
 /* Fixed double scroll: replaced aspect-ratio with a fixed height */
@@ -1983,4 +1976,43 @@ main {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ── FLOATING CONSULTATION BUTTON ── */
+.floating-consult-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 900;                     /* below the mobile sidebar (999/1000) */
+  width: 60px;
+  height: 60px;
+  background: var(--accent);        /* gold */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-consult-btn svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  stroke: white;                    /* ensure SVG lines are white */
+}
+
+.floating-consult-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  background: #d4b678;              /* slightly lighter gold */
+}
+
+/* Hide the floating button when the mobile sidebar is open,
+   so it doesn't show through the semi‑transparent overlay */
+.mobile-sidebar-overlay.show ~ .floating-consult-btn,
+.mobile-sidebar.open ~ .floating-consult-btn {
+  display: none;
 }
